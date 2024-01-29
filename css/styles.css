@@ -85,16 +85,6 @@ section {
     gap: 40px;
 }
 
-.list-navigation-studio-1 {
-    color: #404BBF;
-    font-weight: 500;
-        padding: 24px 0;
-        position: relative;
-        transition-property: color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .list-navigation-studio {
     color: #2E2F42;
     font-weight: 500;
@@ -110,7 +100,7 @@ section {
     color: #404BBF;
 }
 
-.list-navigation-studio-1::after {
+.list-navigation-studio::after {
     content:'';
     width: 100%;
     height: 4px;
