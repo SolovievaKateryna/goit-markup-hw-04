@@ -85,13 +85,13 @@ section {
     gap: 40px;
 }
 
-.list-navigation a:hover,
+/*.list-navigation a:hover,
 .list-navigation a:focus {
     color: #404BBF;
-}
+}*/
 
 .list-navigation-studio {
-    color: #404BBF;
+    color: #2E2F42;
     font-weight: 500;
     padding: 24px 0;
     position: relative;
@@ -100,15 +100,19 @@ section {
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-navigation a:hover::after,
-.list-navigation a:focus::after {
+.list-navigation-studio:hover,
+.list-navigation-studio:focus {
+    color: #404BBF;
+}
+
+.list-navigation-studio::after {
     content:'';
     width: 100%;
     height: 4px;
     border-radius: 2px;
+    background-color: #404BBF;
     display: block;
     position: absolute;
-    background-color: #404BBF;
     left: 0;
     bottom: -1px;
 }
