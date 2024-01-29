@@ -49,6 +49,9 @@ section {
     padding-top: 24px;
     padding-bottom: 24px;
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -97,6 +100,8 @@ section {
 
 .list-navigation-studio {
     padding: 24px 0;
+    position: relative;
+    color: #404bbf;
 }
 
 .item-list-navigation {
@@ -107,17 +112,16 @@ section {
 }
 
 .item-list-navigation:hover::after {
-    content: '';
-    width: 48px;
+    content:'';
+    width: 100%;
     height: 4px;
     border-radius: 2px;
     display: block;
     position: absolute;
     background-color: #404BBF;
-    border-radius: 2px;
     top: 40px;
-    right: 50%;
-    transform: translateX(50%);
+    left: 0;
+    bottom: -1px;
 }
 
 address {
@@ -154,10 +158,11 @@ address {
     background-size: cover;
     text-align: center;
     padding: 188px 0;
+    max-width: 1440px;
 }
 
 .section-hero-container {
-    max-width: 1440px;
+    /*max-width: 1440px;*/
 }
 
 .title-section-hero {
@@ -232,6 +237,7 @@ address {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 8px;
 }
 
 .feature-advantages {
@@ -241,7 +247,6 @@ address {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-    margin-top: 8px;
 }
 
 
@@ -303,30 +308,33 @@ address {
     justify-content: center;
 }
 
-.icons-container {
-    width: 40px;
-    height: 40px;
+.social-link {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     background-color: #4D5AE5;
     display: flex;
     justify-content: center;
     align-items: center;
     transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icons-container {
+    width: 40px;
+    height: 40px;
 }
 
 .team-icons {
     fill:#f4f4fd;
 }
 
-/*.icons-container:hover {
-    background-color: #404BBF;
-}*/
-
-.card-section-team:hover .icons-container {
+.social-link:hover,
+.social-link:focus {
     background-color: #404BBF;
 }
+
 
 /**Секція 4, Our Portfolio-----------------------------*/
 
@@ -438,7 +446,11 @@ address {
 
 .footer-container {
     display: flex;
-    gap: 120px;
+    align-items: baseline
+}
+
+.footer-column-first {
+    margin-right: 120px
 }
 
 .footer-social-tex {
@@ -453,6 +465,6 @@ address {
     flex-direction: row;
 }
 
-.footer-icons-container:hover {
+.footer-social-link:hover {
     background-color: #31D0AA;
 }
