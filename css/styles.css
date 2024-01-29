@@ -85,12 +85,6 @@ section {
     gap: 40px;
 }
 
-/*.list-navigation a {
-    
-    /*transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
-
 .list-navigation a:hover,
 .list-navigation a:focus {
     color: #404BBF;
@@ -105,12 +99,6 @@ section {
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/*.item-list-navigation {
-    position: relative;
-    /*transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);*/
 
 .list-navigation a:hover::after,
 .list-navigation a:focus::after {
